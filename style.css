@@ -1,4 +1,6 @@
-html, header, body, nav, ul, h1, p {
+
+
+html, header, body, nav, ul, h1, h2, h3, p {
 	margin:0;
 	padding:0;
 }
@@ -7,6 +9,20 @@ html, header, body, nav, ul, h1, p {
 
 body{
   font-family: "Lato";
+}
+
+nav{
+	margin-bottom: 20px;
+	background-color: rgb(90,92,94);
+	height:100%;
+	color:white;
+}
+
+nav h1{
+	margin:0;
+	margin-left: 10px;
+
+	padding-top: 10px;
 }
 
 header h3, h2 {

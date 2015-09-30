@@ -57,6 +57,18 @@ window.onload = function(){
         return ((this.yeast() / this.flour()) * 100).toFixed(1);
       }, this);
 
+      //ounces to grams
+      this.ounces = ko.observable(1);
+      this.grams = ko.observable(28.35);
+
+      this.ozToGm = ko.computed(function(){
+        return (this.ounces() * 28.35).toFixed(2);
+      }, this);
+
+      this.gmToOz = ko.computed(function(){
+        return (this.grams() * 0.03495).toFixed(2);
+      }, this);
+
   }
 
   ko.applyBindings(new AppViewModel);

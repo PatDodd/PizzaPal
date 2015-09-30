@@ -8,13 +8,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h2>Pizza Pal</h2>
-    <p class="tagline">Less "doh!" = better dough!</p>
+    <nav>
+      <h1>Pizza Pal</h1>
+      <p class="tagline">Less "doh!" = better dough.</p>
+    </nav>
 
     </article>
     <article id="yeast_conversion">
       <header>
-        <h3>YEAST: TYPE CONVERSION</h3>
+        <h3>YEAST EQUIVALENCE</h3>
       </header>
       <section class="yeast_section" id="fresh">
         <p><label>Fresh(Cake): <input data-bind="textInput: freshField" />gms </label></p>
@@ -55,5 +57,16 @@
       </section>
     </article>
 
+    <article>
+      <header>
+        <h3>OUNCES TO GRAMS</h3>
+      </header>
+      <section class="yeast_section">
+        <label>Ounces: <input data-bind="value: ounces, textInput: ounces"/></label>
+        <p><strong>Grams: </strong><span data-bind="text: ozToGm"></span></p>
+        <label>Grams: <input data-bind="value: grams, textInput: grams"/></label>
+        <p><strong>Ounces: </strong><span data-bind="text: gmToOz"></span></p>
+      </section>
+    </article>
   </body>
 </html>
