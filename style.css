@@ -1,0 +1,34 @@
+html, header, body, nav, ul, h1, p {
+	margin:0;
+	padding:0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body{
+  font-family: "Lato";
+}
+
+header h3, h2 {
+  margin: 10px;
+}
+article{
+  display: inline-block;
+}
+
+.tagline{
+  margin: 10px;
+  padding-bottom: 20px;
+
+}
+
+.yeast_section{
+  background-color: rgb(210, 227, 242);
+  width: 260px;
+  padding:10px;
+  margin: 10px;
+}
+
+.yeast_section p{
+  line-height: 2em;
+}
