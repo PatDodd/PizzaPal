@@ -11,40 +11,89 @@ body{
   font-family: "Lato";
 }
 
+#top{
+	background-color: rgb(90,92,94);
+	margin-bottom:30px;
+}
+
+#wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
 nav{
 	margin-bottom: 20px;
-	background-color: rgb(90,92,94);
 	height:100%;
 	color:white;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 nav h1{
 	margin:0;
-	margin-left: 10px;
-
+	/*margin-left: 10px;*/
 	padding-top: 10px;
 }
 
 header h3, h2 {
-  margin: 10px;
+  /*margin: 10px;*/
+	margin-bottom: 6px;
 }
 article{
   display: inline-block;
+	margin-bottom: 30px;
 }
 
 .tagline{
-  margin: 10px;
+  /*margin: 10px;*/
   padding-bottom: 20px;
 
 }
 
 .yeast_section{
   background-color: rgb(210, 227, 242);
-  width: 260px;
+  width: 285px;
   padding:10px;
-  margin: 10px;
+	margin-right: 10px;
+  /*margin: 0, 10px, 0 , 0;*/
 }
 
 .yeast_section p{
   line-height: 2em;
+}
+
+footer{
+	/*margin:10px;*/
+}
+
+@media all and (max-width: 955px){
+	nav{
+		width:95%;
+	}
+
+	#wrapper{
+		width:95%;
+	}
+
+	article{
+	  display: block;
+	}
+
+	.yeast_section{
+		width:300px;
+	}
+}
+
+@media all and (max-width: 400px){
+	nav{
+		margin: 0 auto;
+	}
+
+	#wrapper{
+		margin: 0 auto;
+	}
+
+	.article{
+		margin: 0 auto;
+	}
 }

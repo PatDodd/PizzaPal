@@ -8,65 +8,74 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <nav>
-      <h1>Pizza Pal</h1>
-      <p class="tagline">Less "doh!" = better dough.</p>
-    </nav>
 
-    </article>
-    <article id="yeast_conversion">
-      <header>
-        <h3>YEAST EQUIVALENCE</h3>
-      </header>
-      <section class="yeast_section" id="fresh">
-        <p><label>Fresh(Cake): <input data-bind="textInput: freshField" />gms </label></p>
-        <p><strong>Instant:</strong> <span data-bind="text: instantFresh"></span><small>gms</small> <strong>Active:</strong> <span data-bind="text: activeFresh"></span><small>gms</small> </p>
-      </section>
-      <section class="yeast_section" id="instant">
-        <p><label>Instant: <input data-bind="textInput: instantField" data />gms </label></p>
-        <p><strong>Fresh:</strong> <span data-bind="text: freshInstant"></span><small>gms</small> <strong>Active:</strong> <span data-bind="text: activeInstant"></span><small>gms</small> </p>
-      </section>
-      <section class="yeast_section" id="active">
-        <p><label>Active Dry: <input data-bind="textInput: activeField" />gms </label></p>
-        <p><strong>Fresh:</strong> <span data-bind="text: freshActive"></span><small>gms</small> <strong>Instant:</strong> <span data-bind="text: instantActive"></span><small>gms</small> </p>
-      </section>
-    </article>
+    <header id="top">
+        <nav>
+          <h1>Pizza Pal</h1>
+          <p class="tagline">Less "doh!" = better dough.</p>
+        </nav>
+    </header>
 
-    <article>
-      <header>
-        <h3>BAKER'S PERCENTAGE</h3>
-      </header>
-      <section class="yeast_section">
-        <p>
-          <label>Flour: <input data-bind="textInput: flour" data-bind="value: flour"  /><small> gms</small></label>
-          <span data-bind="text: flourPercent"></span>%
-        </p>
-        <p>
-          <label>Water: <input data-bind="textInput: water" data-bind="value: water"  /><small> gms</small></label>
-          <span data-bind="text: waterPercent"></span>%
-        </p>
-        <p>
-          <label>Salt: <input data-bind="textInput: salt" data-bind="value: salt"  /><small> gms</small></label>
-          <span data-bind="text: saltPercent"></span>%
-        </p>
-        <p>
-          <label>Yeast: <input data-bind="textInput: yeast" data-bind="value: yeast"  /><small> gms</small></label>
-          <span data-bind="text: yeastPercent"></span>%
-        </p>
-        <p><small>*Note: For water, 1ml = 1gm.</small></p>
-      </section>
-    </article>
+    <div id="wrapper">
 
-    <article>
-      <header>
-        <h3>OUNCES TO GRAMS</h3>
-      </header>
-      <section class="yeast_section">
-        <label>Ounces: <input data-bind="value: ounces, textInput: ounces"/></label>
-        <p><strong>Grams: </strong><span data-bind="text: ozToGm"></span></p>
-        <label>Grams: <input data-bind="value: grams, textInput: grams"/></label>
-        <p><strong>Ounces: </strong><span data-bind="text: gmToOz"></span></p>
-      </section>
-    </article>
+      <article id="yeast_conversion">
+        <header>
+          <h3>YEAST EQUIVALENCE</h3>
+        </header>
+        <section class="yeast_section" id="fresh">
+          <p><label>Fresh(Cake): <input data-bind="textInput: freshField" /><small>gms </small></label></p>
+          <p><strong>Instant:</strong> <span data-bind="text: instantFresh"></span><small>gms</small> <strong>Active:</strong> <span data-bind="text: activeFresh"></span><small>gms</small> </p>
+        </section>
+        <section class="yeast_section" id="instant">
+          <p><label>Instant: <input data-bind="textInput: instantField" data /><small>gms </small></label></p>
+          <p><strong>Fresh:</strong> <span data-bind="text: freshInstant"></span><small>gms</small> <strong>Active:</strong> <span data-bind="text: activeInstant"></span><small>gms</small> </p>
+        </section>
+        <section class="yeast_section" id="active">
+          <p><label>Active Dry: <input data-bind="textInput: activeField" /><small>gms </small></label></p>
+          <p><strong>Fresh:</strong> <span data-bind="text: freshActive"></span><small>gms</small> <strong>Instant:</strong> <span data-bind="text: instantActive"></span><small>gms</small> </p>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>BAKER'S PERCENTAGE</h3>
+        </header>
+        <section class="yeast_section">
+          <p>
+            <label>Flour: <input data-bind="textInput: flour" data-bind="value: flour"  /><small> gms</small></label>
+            <span data-bind="text: flourPercent"></span>%
+          </p>
+          <p>
+            <label>Water: <input data-bind="textInput: water" data-bind="value: water"  /><small> gms</small></label>
+            <span data-bind="text: waterPercent"></span>%
+          </p>
+          <p>
+            <label>Salt: <input data-bind="textInput: salt" data-bind="value: salt"  /><small> gms</small></label>
+            <span data-bind="text: saltPercent"></span>%
+          </p>
+          <p>
+            <label>Yeast: <input data-bind="textInput: yeast" data-bind="value: yeast"  /><small> gms</small></label>
+            <span data-bind="text: yeastPercent"></span>%
+          </p>
+          <p><small>*Note: For water, 1ml = 1gm.</small></p>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>OUNCES TO GRAMS</h3>
+        </header>
+        <section class="yeast_section">
+          <label>Ounces: <input data-bind="value: ounces, textInput: ounces"/></label>
+          <p><strong>Grams: </strong><span data-bind="text: ozToGm"></span></p>
+          <label>Grams: <input data-bind="value: grams, textInput: grams"/></label>
+          <p><strong>Ounces: </strong><span data-bind="text: gmToOz"></span></p>
+        </section>
+      </article>
+      <footer>
+        <p><small>&copy; 2015, Patrick Dodd.</small></p>
+      </footer>
+  </div>
+
   </body>
 </html>
